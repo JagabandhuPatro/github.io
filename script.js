@@ -7,7 +7,7 @@ new Typed("#typed", {
     "I am a HPC & Calibration Systems Specialist",
     "AI/Cloud Enthusiast"
   ],
-  typeSpeed: 50,
+  typeSpeed: 100,
   backSpeed: 60,
   loop: true
 });
