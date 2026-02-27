@@ -15,34 +15,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===========================
-// SKILL BAR ANIMATION ON SCROLL
+// SKILL CARDS ANIMATION
 // ===========================
-const observerOptions = {
-    threshold: 0.5,
-    rootMargin: '0px'
-};
-
-const skillBarObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+const skillCategoryObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-            entry.target.querySelectorAll('.skill-progress').forEach(bar => {
-                // Trigger animation by setting width
-                const width = bar.style.width;
-                bar.style.width = '0%';
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 100);
-            });
-            // Unobserve after animation triggers
-            skillBarObserver.unobserve(entry.target);
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0) scale(1)';
+                
+                // Animate list items
+                const listItems = entry.target.querySelectorAll('.skill-list li');
+                listItems.forEach((item, itemIndex) => {
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateX(0)';
+                    }, itemIndex * 80);
+                });
+            }, index * 150);
+            skillCategoryObserver.unobserve(entry.target);
         }
     });
-}, observerOptions);
+}, {
+    threshold: 0.1
+});
 
-const skillsSection = document.querySelector('.skills');
-if (skillsSection) {
-    skillBarObserver.observe(skillsSection);
-}
+document.querySelectorAll('.skill-category-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px) scale(0.95)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    
+    // Set initial state for list items
+    card.querySelectorAll('.skill-list li').forEach(li => {
+        li.style.opacity = '0';
+        li.style.transform = 'translateX(-20px)';
+        li.style.transition = 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease, padding-left 0.3s ease, background 0.3s ease';
+    });
+    
+    skillCategoryObserver.observe(card);
+});
 
 // ===========================
 // NAVBAR BACKGROUND ON SCROLL
