@@ -1465,7 +1465,17 @@ section h2::after {
 
 .cert-details {
     margin-top: 1.2rem;
-    padding
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.cert-issuer {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
 
    /* ===========================
    PROJECTS SECTION - SIMPLIFIED
