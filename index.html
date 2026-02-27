@@ -53,71 +53,229 @@
             </div>
         </div>
     </section>
-
-    <!-- Skills Section -->
+        <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>My Skills</h2>
+            <h2>Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Programming languages</h3>
-                    <p>C#, C++, Python, C, MATLAB </p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
+                <!-- Languages & Frameworks -->
+                <div class="skill-category-card">
+                    <div class="skill-icon-circle">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
                     </div>
+                    <h3>LANGUAGES & FRAMEWORKS</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">▸</span>
+                            <span>C / C++</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">▸</span>
+                            <span>C# (WPF, MVVM)</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">▸</span>
+                            <span>Qt Framework</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">▸</span>
+                            <span>Embedded Linux</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">▸</span>
+                            <span>Python</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <h3>Automation</h3>
-                    <p>Python, Matlab App designer, CAPL,CANoe</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
+
+                <!-- Embedded & RTOS -->
+                <div class="skill-category-card">
+                    <div class="skill-icon-circle">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                            <rect x="9" y="9" width="6" height="6"></rect>
+                            <line x1="9" y1="1" x2="9" y2="4"></line>
+                            <line x1="15" y1="1" x2="15" y2="4"></line>
+                            <line x1="9" y1="20" x2="9" y2="23"></line>
+                            <line x1="15" y1="20" x2="15" y2="23"></line>
+                            <line x1="20" y1="9" x2="23" y2="9"></line>
+                            <line x1="20" y1="14" x2="23" y2="14"></line>
+                            <line x1="1" y1="9" x2="4" y2="9"></line>
+                            <line x1="1" y1="14" x2="4" y2="14"></line>
+                        </svg>
                     </div>
+                    <h3>EMBEDDED & RTOS</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">⚡</span>
+                            <span>FreeRTOS</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">⚙️</span>
+                            <span>OSEK</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📦</span>
+                            <span>BSP Development</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">🔧</span>
+                            <span>Low-level Drivers</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">🎯</span>
+                            <span>Performance Optimization</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <h3>Database</h3>
-                    <p>MySQL, PostgreSQL</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
+
+                <!-- Hardware Design -->
+                <div class="skill-category-card">
+                    <div class="skill-icon-circle">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
                     </div>
+                    <h3>HARDWARE DESIGN</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">🔷</span>
+                            <span>Altium Designer</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📐</span>
+                            <span>Zuken</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">🔌</span>
+                            <span>PCB Design</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">🚀</span>
+                            <span>Board Bring-up</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">🔄</span>
+                            <span>HW-SW Co-design</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <h3>Framework</h3>
-                    <p>WPF/MVVM windows application, UWP Automation testing,Agile software development</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
+
+                <!-- Test & Automation -->
+                <div class="skill-category-card">
+                    <div class="skill-icon-circle">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
                     </div>
+                    <h3>TEST & AUTOMATION</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">📊</span>
+                            <span>NI PXI / cDAQ / cRIO</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📈</span>
+                            <span>LabVIEW</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">🧪</span>
+                            <span>TestStand</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📱</span>
+                            <span>MATLAB App Designer</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">✅</span>
+                            <span>V&V Frameworks</span>
+                        </li>
+                    </ul>
                 </div>
-                 <div class="skill-card">
-                    <h3>Integration pipeline</h3>
-                    <p>jita, Jenkin, git</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
+
+                <!-- Architecture & Modeling -->
+                <div class="skill-category-card">
+                    <div class="skill-icon-circle">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <circle cx="6" cy="6" r="2"></circle>
+                            <circle cx="18" cy="6" r="2"></circle>
+                            <circle cx="6" cy="18" r="2"></circle>
+                            <circle cx="18" cy="18" r="2"></circle>
+                            <line x1="8" y1="6" x2="10" y2="10"></line>
+                            <line x1="16" y1="6" x2="14" y2="10"></line>
+                            <line x1="8" y1="18" x2="10" y2="14"></line>
+                            <line x1="16" y1="18" x2="14" y2="14"></line>
+                        </svg>
                     </div>
+                    <h3>ARCHITECTURE & MODELING</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">🔷</span>
+                            <span>SysML / UML</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📐</span>
+                            <span>Design Patterns</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">🧪</span>
+                            <span>Test Driver Development</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">🔄</span>
+                            <span>Agile / Scrum</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">⚙️</span>
+                            <span>Configuration Management</span>
+                        </li>
+                    </ul>
                 </div>
-                 <div class="skill-card">
-                    <h3>Tools</h3>
-                    <p>Polariaon ,EA, coadbeamer, MKS, Matlab App designer</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category-card">
+                    <div class="skill-icon-circle">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6m5.2-13.2l-4.2 4.2m0 6l4.2 4.2M23 12h-6m-6 0H1m18.2 5.2l-4.2-4.2m0-6l4.2-4.2"></path>
+                        </svg>
                     </div>
-                </div>    
-                 <div class="skill-card">
-                    <h3>Modeling</h3>
-                    <p>UML,SyML</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>   
-                  <div class="skill-card">
-                    <h3>Automotove technologies</h3>
-                    <p>ODX/OTX Authoring,CAN,UDS,KWP2000, ECU Flashing</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>   
+                    <h3>DEVOPS & TOOLS</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-bullet">🔧</span>
+                            <span>Jenkins</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📦</span>
+                            <span>Bitbucket / Git</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📊</span>
+                            <span>JIRA</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📝</span>
+                            <span>Confluence</span>
+                        </li>
+                        <li>
+                            <span class="skill-bullet">📡</span>
+                            <span>HIL / CAN / Scopes</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
